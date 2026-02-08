@@ -78,7 +78,7 @@ body {
 
 .overlay img {
   width: auto;
-  max-width: none;
+  max-width: 1280px;
   height: auto;
 
   display: block;
