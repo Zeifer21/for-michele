@@ -78,10 +78,12 @@ body {
 
 .overlay img {
   width: 90vw;
-  max-width: 1600px;
+  max-width: none;
   height: auto;
+
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
+
   background: white;
 }
 
