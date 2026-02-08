@@ -11,7 +11,7 @@ envelope.addEventListener("click", () => {
 
   // reproducir música solo una vez
   if (!hasPlayed) {
-    music.volume = 0.02;
+    music.volume = 0.1;
     music.play().catch(() => {});
     hasPlayed = true;
   }
