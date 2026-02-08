@@ -11,7 +11,7 @@ envelope.addEventListener("click", () => {
 
   // reproducir música solo una vez
   if (!hasPlayed) {
-    music.volume = 0.1;
+    music.volume = 0.2;
     music.play().catch(() => {});
     hasPlayed = true;
   }
@@ -19,15 +19,4 @@ envelope.addEventListener("click", () => {
   setTimeout(() => {
     overlay.classList.add("show");
   }, 700);
-});
-
-// cerrar carta
-overlay.addEventListener("click", (e) => {
-  if (e.clientY < 80) {
-    overlay.classList.remove("show");
-    envelope.classList.remove("open");
-
-    // OPCIONAL: detener música al cerrar
-    music.pause();
-  }
 });
